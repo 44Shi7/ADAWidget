@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nevzora Accessibility Menu</title>
+<link rel="stylesheet" href="panel.css">
+</head>
+<body>
+<section class="widget">
+<header class="widget__header">
+<div><div class="widget__title">Accessibility Menu <span>(CTRL+U)</span></div><div class="widget__brand">Powered by Nevzora</div></div>
+<button class="icon-btn" id="closeBtn" aria-label="Close">×</button>
+</header>
+<div class="widget__body">
+<button class="row" id="languageToggle"><span class="round">US</span><span class="row__label" id="currentLanguage">English (USA)</span><span class="chev">▾</span></button>
+<div class="language-panel" id="languagePanel" hidden><input id="languageSearch" class="search" type="search" placeholder="Search language"><div id="languageList" class="language-list"></div></div>
+<button class="row"><span class="profile-icon">♿</span><span class="row__label">Accessibility Profiles</span><span class="chev">›</span></button>
+<div class="row"><span class="xl">XL</span><span class="row__label">Oversized Widget</span><label class="switch"><input type="checkbox" id="oversizedToggle"><span></span></label></div>
+
+<div class="grid">
+<button class="feature" data-action="smart-contrast"><b>◐</b><span class="feature-label">Smart Contrast</span></button>
+<button class="feature" data-action="pause-animations"><b>Ⅱ</b><span class="feature-label">Pause Animations</span></button>
+<button class="feature" data-action="screen-reader"><b>〰</b><span class="feature-label">Screen Reader</span></button>
+<button class="feature" data-action="voice-navigation"><b>🎙</b><span class="feature-label">Voice Navigation</span></button>
+<button class="feature" data-action="contrast-plus"><b>◒</b><span class="feature-label">Contrast +</span></button>
+<button class="feature" data-action="highlight-links"><b>🔗</b><span class="feature-label">Highlight Links</span></button>
+<button class="feature" data-action="bigger-text"><b>Tᵀ</b><span class="feature-label">Bigger Text</span></button>
+<button class="feature" data-action="text-spacing"><b>↔</b><span class="feature-label">Text Spacing</span></button>
+<button class="feature" data-action="hide-images"><b>▧</b><span class="feature-label">Hide Images</span></button>
+<button class="feature" data-action="dyslexia-friendly"><b>Df</b><span class="feature-label">Dyslexia Friendly</span></button>
+<button class="feature" data-action="cursor"><b>➤</b><span class="feature-label">Cursor</span></button>
+<button class="feature" data-action="tooltips"><b>ⓘ</b><span class="feature-label">Tooltips</span></button>
+<button class="feature" data-action="page-structure"><b>▱</b><span class="feature-label">Page Structure</span></button>
+<button class="feature" data-action="line-height"><b>↕≡</b><span class="feature-label">Line Height</span></button>
+<button class="feature" data-action="text-align"><b>≡</b><span class="feature-label">Text Align</span></button>
+<button class="feature" data-action="dictionary"><b>A</b><span class="feature-label">Dictionary</span></button>
+<button class="feature" data-action="saturation"><b>◐</b><span class="feature-label">Saturation</span></button>
+</div>
+
+<button class="reset-btn" id="resetBtn">↻ Reset All Accessibility Settings</button>
+<details class="move-box"><summary>⚙ Move Accessibility Widget</summary><label><span>Left</span><input type="radio" name="position" value="left"></label><label><span>Right</span><input type="radio" name="position" value="right" checked></label></details>
+</div>
+<footer class="widget__footer"><div><a href="#" onclick="return false">Accessibility Statement</a><button class="manage-btn">Manage</button></div><img src="nevzora-logo.png" alt="Nevzora"></footer>
+</section>
+<script src="panel.js"></script>
+</body>
+</html>
