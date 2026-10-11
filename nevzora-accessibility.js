@@ -22,7 +22,7 @@ function ensureFrame(){
  frame=document.createElement("iframe");
  frame.src="nevzora-widget/panel.html";
  frame.title="Nevzora Accessibility Menu";
- Object.assign(frame.style,{position:"fixed",top:"0",right:"0",width:"670px",maxWidth:"100vw",height:"100vh",border:"0",background:"transparent",zIndex:"2147483001",display:"none",boxShadow:"-22px 0 60px rgba(0,0,0,.15)"});
+ Object.assign(frame.style,{position:"fixed",top:"0",right:"0",width:"570px",maxWidth:"100vw",height:"100vh",border:"0",background:"transparent",zIndex:"2147483001",display:"none",boxShadow:"-22px 0 60px rgba(0,0,0,.15)"});
  document.body.appendChild(frame);return frame;
 }
 function openFrame(){ensureFrame().style.display="block"}
